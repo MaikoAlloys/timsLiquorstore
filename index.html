@@ -254,6 +254,37 @@
     </div>
 </footer>
 
+<script>
+  // Wait for the DOM content to be loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the search form element
+    const searchForm = document.querySelector('form[role="search"]');
+
+    // Add event listener for form submission
+    searchForm.addEventListener('submit', function(event) {
+      // Prevent the default form submission behavior
+      event.preventDefault();
+
+      // Get the search query from the input field
+      const searchInput = document.querySelector('input[type="search"]');
+      const searchTerm = searchInput.value.trim();
+
+      // Log the search query to the console
+      console.log('Search query:', searchTerm);
+
+      // You can perform further actions here, such as sending an AJAX request
+      // to the server with the search query or filtering content based on the query
+    });
+  });
+</script>
+
+
+
+
+
+
+    
+
   </body>
  <script>
  
